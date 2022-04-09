@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testing" project="DiceGame" tests="20" started="20" failures="0" errors="0" ignored="0">
+  <testsuite name="testing.GetCorrectScoreAfterRolling_assertTrue" incomplete="true">
+    <testcase name="test" classname="testing.GetCorrectScoreAfterRolling_assertTrue" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.NumberOfPlayersLessThanOne_AssertFalse" incomplete="true">
+    <testcase name="test" classname="testing.NumberOfPlayersLessThanOne_AssertFalse" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.UpdatingScore_assertTrue" incomplete="true">
+    <testcase name="test" classname="testing.UpdatingScore_assertTrue" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.numberOfPlayersGreaterThanZero_AssertsTrue" incomplete="true">
+    <testcase name="test" classname="testing.numberOfPlayersGreaterThanZero_AssertsTrue" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.DiceThrowShouldBeBetween1to6_AssertTrue" incomplete="true">
+    <testcase name="test" classname="testing.DiceThrowShouldBeBetween1to6_AssertTrue" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.SecondRollOnGettingSix_assertTrue" incomplete="true">
+    <testcase name="test" classname="testing.SecondRollOnGettingSix_assertTrue" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.GetPlayerName" incomplete="true">
+    <testcase name="test" classname="testing.GetPlayerName" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.PenaltyAfterTwoConsecutiveOnes_AssertTrue" incomplete="true">
+    <testcase name="test" classname="testing.PenaltyAfterTwoConsecutiveOnes_AssertTrue" incomplete="true"/>
+  </testsuite>
+  <testsuite name="testing.AllTests" incomplete="true">
+    <testsuite name="testing.numberOfPlayersGreaterThanZero_AssertsTrue" time="0.0">
+      <testcase name="test" classname="testing.numberOfPlayersGreaterThanZero_AssertsTrue" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.DiceThrowShouldBeBetween1to6_AssertTrue" time="0.0">
+      <testcase name="test" classname="testing.DiceThrowShouldBeBetween1to6_AssertTrue" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.NumberOfPlayersLessThanOne_AssertFalse" time="0.0">
+      <testcase name="test" classname="testing.NumberOfPlayersLessThanOne_AssertFalse" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.PenaltyAfterTwoConsecutiveOnes_AssertTrue" time="0.001">
+      <testcase name="test" classname="testing.PenaltyAfterTwoConsecutiveOnes_AssertTrue" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.GettingLastThrowValue_AssertTrue" incomplete="true">
+      <testcase name="test" classname="testing.GettingLastThrowValue_AssertTrue" incomplete="true"/>
+    </testsuite>
+    <testsuite name="testing.SecondRollOnGettingSix_assertTrue" time="0.0">
+      <testcase name="test" classname="testing.SecondRollOnGettingSix_assertTrue" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.GetCorrectScoreAfterRolling_assertTrue" time="0.0">
+      <testcase name="test" classname="testing.GetCorrectScoreAfterRolling_assertTrue" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.UpdatingScore_assertTrue" time="0.0">
+      <testcase name="test" classname="testing.UpdatingScore_assertTrue" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.GetPlayerName" time="0.0">
+      <testcase name="test" classname="testing.GetPlayerName" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.GameHasPlayer_3_assertTrue" incomplete="true">
+      <testcase name="test" classname="testing.GameHasPlayer_3_assertTrue" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+  <testsuite name="testing.GameHasPlayer_3_assertTrue" time="0.003">
+    <testcase name="test" classname="testing.GameHasPlayer_3_assertTrue" time="0.0"/>
+  </testsuite>
+  <testsuite name="testing.GettingLastThrowValue_AssertTrue" time="0.0">
+    <testcase name="test" classname="testing.GettingLastThrowValue_AssertTrue" time="0.0"/>
+  </testsuite>
+</testrun>

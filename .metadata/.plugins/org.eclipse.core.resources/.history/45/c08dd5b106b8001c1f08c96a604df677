@@ -145,7 +145,7 @@ public class PlayGame {
 	 */
 	public void printScoreCard() {
 		ArrayList<Player> scoreList=getHighScores();
-		System.out.println("\n************************************\n");
+		System.out.println("\n***************************\n");
 		System.out.println("Player Name  :  Score  :  Game Status \n");
 		for(Player p: this.winnersList) {
 			System.out.println(p.getPlayerName() + "     :    " + p.getScore()+ "  : Completed ");
@@ -154,7 +154,7 @@ public class PlayGame {
 		for(Player p: scoreList) {
 			System.out.println(p.getPlayerName() + "     :    " + p.getScore() + "    : in Progress");
 		}
-		System.out.println("\n************************************\n");
+		System.out.println("\n***************************\n");
 
 	}
 	

@@ -80,7 +80,6 @@ public class PlayGame {
 	public PlayGame(int numberOfPlayers){
 		this.targetScore=0;
 		 playerQueue = new ArrayDeque<Player>();
-		 this.winnersList= new ArrayList<Player>();
 		ArrayList<Integer> sequence= this.createRandomSequence(numberOfPlayers);
 		this.createPlayers(sequence);	
 	}
@@ -145,7 +144,7 @@ public class PlayGame {
 	 */
 	public void printScoreCard() {
 		ArrayList<Player> scoreList=getHighScores();
-		System.out.println("\n************************************\n");
+		System.out.println("\n***************************\n");
 		System.out.println("Player Name  :  Score  :  Game Status \n");
 		for(Player p: this.winnersList) {
 			System.out.println(p.getPlayerName() + "     :    " + p.getScore()+ "  : Completed ");
@@ -154,7 +153,7 @@ public class PlayGame {
 		for(Player p: scoreList) {
 			System.out.println(p.getPlayerName() + "     :    " + p.getScore() + "    : in Progress");
 		}
-		System.out.println("\n************************************\n");
+		System.out.println("\n***************************\n");
 
 	}
 	
@@ -208,7 +207,7 @@ public class PlayGame {
 						 
 						 System.out.println("-------------------------------------------");
 						 System.out.println(currentPlayer.getPlayerName() + " has reached the target value \n with a score of " + 
-						 currentPlayer.getScore() + "\n Rank: " + (game.winnersList.size()+1));
+						 currentPlayer.getScore() + "\n Rank: " + game.winnersList.size()+1);
 						 System.out.println("-------------------------------------------");
 						 
 						 //add to winner list
@@ -216,7 +215,6 @@ public class PlayGame {
 						 
 						 //remove winners from queue
 						 game.playerQueue.poll();
-						 game.printScoreCard();
 						 continue;
 					 }
 					 if(!currentPlayer.checkLuck() ){

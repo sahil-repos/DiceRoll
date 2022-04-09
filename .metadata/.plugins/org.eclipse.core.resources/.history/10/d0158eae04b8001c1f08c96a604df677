@@ -13,7 +13,6 @@ import models.Player;
 public class PlayGame {
 	private Queue<Player> playerQueue;
 	private int targetScore;
-	private ArrayList<Player> winnersList;
 	
 	/**
 	 * Take number of players as input n
@@ -80,7 +79,6 @@ public class PlayGame {
 	public PlayGame(int numberOfPlayers){
 		this.targetScore=0;
 		 playerQueue = new ArrayDeque<Player>();
-		 this.winnersList= new ArrayList<Player>();
 		ArrayList<Integer> sequence= this.createRandomSequence(numberOfPlayers);
 		this.createPlayers(sequence);	
 	}
@@ -145,16 +143,12 @@ public class PlayGame {
 	 */
 	public void printScoreCard() {
 		ArrayList<Player> scoreList=getHighScores();
-		System.out.println("\n************************************\n");
-		System.out.println("Player Name  :  Score  :  Game Status \n");
-		for(Player p: this.winnersList) {
-			System.out.println(p.getPlayerName() + "     :    " + p.getScore()+ "  : Completed ");
-		}
-		
+		System.out.println("\n***************************\n");
+		System.out.println("Player Name  :  Score\n");
 		for(Player p: scoreList) {
-			System.out.println(p.getPlayerName() + "     :    " + p.getScore() + "    : in Progress");
+			System.out.println(p.getPlayerName() + "     :    " + p.getScore());
 		}
-		System.out.println("\n************************************\n");
+		System.out.println("\n***************************\n");
 
 	}
 	
@@ -166,15 +160,6 @@ public class PlayGame {
 		 ArrayList<Player> scoreList= new ArrayList<Player>(this.playerQueue);
 		 Collections.sort(scoreList, new PlayerComparator());
 		 return scoreList;
-	}
-	
-	/**
-	 * Returns list of winners by rank
-	 * @return List of players
-	 */
-	public ArrayList<Player> getWinnersList(){
-		
-		 return this.winnersList;
 	}
 	
 	
@@ -190,10 +175,11 @@ public class PlayGame {
 			PlayGame game = new PlayGame(playerCount);
 			System.out.println("Please enter the target score:");
 			game.setTargetScore(in.nextInt());
+			int winners=0;
 			game.printScoreCard();
 			
 		 
-			 while(game.getQueueSize()>0)
+			 while(winners<game.getQueueSize())
 			 {
 				 Player currentPlayer= game.playerQueue.peek();
 				 System.out.println(" Throwing dice for :" + currentPlayer.getPlayerName() );
@@ -205,19 +191,12 @@ public class PlayGame {
 					 System.out.println("Dice value: "+ throwVal);
 					 currentPlayer.processThrow(throwVal);
 					 if( (currentPlayer.getScore() ) >= game.getTargetScore() ){
+						 winners++;
 						 
 						 System.out.println("-------------------------------------------");
 						 System.out.println(currentPlayer.getPlayerName() + " has reached the target value \n with a score of " + 
-						 currentPlayer.getScore() + "\n Rank: " + (game.winnersList.size()+1));
+						 currentPlayer.getScore());
 						 System.out.println("-------------------------------------------");
-						 
-						 //add to winner list
-						 game.winnersList.add(currentPlayer);
-						 
-						 //remove winners from queue
-						 game.playerQueue.poll();
-						 game.printScoreCard();
-						 continue;
 					 }
 					 if(!currentPlayer.checkLuck() ){
 						 
