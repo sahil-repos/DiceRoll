@@ -1,0 +1,41 @@
+package models;
+
+public class Player {
+private int playerId;
+private String playerName;
+private int lastDiceNumber;
+private int lastThrowCount;
+private int score;
+
+	public Player(int id){
+		this.playerId=id;
+		this.playerName="Player_"+this.playerId;
+		this.lastDiceNumber=0;
+		this.lastThrowCount=0;
+		this.score=0;
+	}
+	
+	public int[] getLastDiceCount() {
+		int[] diceCountPair= new int[2];
+		diceCountPair[0]=lastDiceNumber;
+		diceCountPair[1]= lastThrowCount;
+		return diceCountPair;
+	}
+	public int getScore(){
+		return score;
+	}
+	
+	public String getPlayerName(){
+		return playerName;
+	}
+	
+	public void updateScore(int s) {
+		this.score+=s;
+	}
+	
+	public void updateLastThrow(int[] currentDiceThrow) {
+		this.lastDiceNumber=currentDiceThrow[0];
+		this.lastThrowCount=currentDiceThrow[1];
+	}
+}
+

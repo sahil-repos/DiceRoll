@@ -1,0 +1,66 @@
+package game;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
+
+import models.Player;
+
+public class PlayGame {
+	Queue<Player> playerQueue;
+	
+	private ArrayList<Integer> createRandomSequence(int n) {
+		ArrayList<Integer> seq = new ArrayList<Integer>();
+		    for (int i = 1; i <= n; i++) {
+		        seq.add(i);
+		    }
+		    Collections.shuffle(seq);
+		    return seq;
+	}
+	private void createPlayers(ArrayList<Integer> sequence) {
+		for(int s: sequence) {
+			Player p= new Player(s);
+			playerQueue.add(p);
+		}
+	}
+	public PlayGame(int numberOfPlayers){
+		ArrayList<Integer> sequence= this.createRandomSequence(numberOfPlayers);
+		this.createPlayers(sequence);
+		System.out.println("\n -----------READY TO PLAY----------- \n");
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		int targetScore=0,numberOfPlayers=0;
+		
+		//checking commandline arguements
+		 if (args.length ==2) {
+	            
+			 targetScore=Integer.parseInt(args[1]);
+			 numberOfPlayers=Integer.parseInt(args[0]);
+	            
+	        }
+	        else {
+	            System.out.println("Please enter two numbers in commandline arguements for number_of_players and target_Score");
+	        }
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		}
+		catch(Exception e) {
+			
+		}
+		 
+	    }
+		
+
+	}
+
+

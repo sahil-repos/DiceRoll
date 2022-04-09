@@ -1,0 +1,18 @@
+package models;
+
+public class Player {
+private static int idCounter=0;
+private int playerId;
+private String playerName;
+private int lastDiceNumber;
+private int lastThrowCount;
+
+	Player(){
+		idCounter+=1;
+		this.playerId=idCounter;
+		this.playerName="Player_"+this.playerId;
+		this.lastDiceNumber=0;
+		this.lastThrowCount=0;
+	}
+}
+
