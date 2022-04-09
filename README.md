@@ -50,9 +50,16 @@ Open the project directory with Eclipse
  `DiceGame\src>java game/PlayGame`
 
 
- ![Game Start](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/init.PNG)
+ ![Game Start](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/startGame.PNG)
 
- 
+ ![init](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/init.PNG)
+
+ ![winner](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/winner.PNG)
+
+ ![FinalScore](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/FinalScore.PNG)
+
+
+
 
 
 
@@ -76,7 +83,11 @@ Press the following shortcut to run all tests
 (For Mac)
 `alt+cmd+XT`
 
+![UT](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/UT.PNG)
+
 You can run each test separately as well , select the test and run the same command.
+
+![singleUT](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/singleUT.PNG)
 
 
 
