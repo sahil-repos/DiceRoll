@@ -38,6 +38,7 @@ Open the project directory with Eclipse
  `DiceGame\src >set path=%path%;C:\Program Files\Java\jdk-18\bin`
  set path for source directory
 
+
  For compiling the java source file using javac, you need to specify the files to compile explicitly
 
  `DiceGame\src> javac models/Player.java`
@@ -49,12 +50,18 @@ Open the project directory with Eclipse
  `DiceGame\src>java game/PlayGame`
 
 
+ ![Game Start](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/init.PNG)
+
+ 
+
+
 
 
 
 ## Live Demo
 
 You can check the deployed repl [here](https://replit.com/@sahil-repl/Dice#PlayGame.java)
+Visit this link and click on green play icon on top.
 
 
 
