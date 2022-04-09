@@ -148,11 +148,11 @@ public class PlayGame {
 		System.out.println("\n************************************\n");
 		System.out.println("Player Name  :  Score  :  Game Status \n");
 		for(Player p: this.winnersList) {
-			System.out.println(p.getPlayerName() + "     :    " + p.getScore()+ "  : Completed ");
+			System.out.println(p.getPlayerName() + "     :    " + p.getScore()+ "  :    Completed ");
 		}
 		
 		for(Player p: scoreList) {
-			System.out.println(p.getPlayerName() + "     :    " + p.getScore() + "    : in Progress");
+			System.out.println(p.getPlayerName() + "     :    " + p.getScore() +"  :    in Progress");
 		}
 		System.out.println("\n************************************\n");
 
@@ -177,19 +177,69 @@ public class PlayGame {
 		 return this.winnersList;
 	}
 	
+	/**
+	 * Checks if player has rolled a 6 or not
+	 * @param player
+	 */
+	public void checkRollLuck(Player player) {
+		if(player.checkLuck() ){
+			//no modification to queue
+			//players gets another go
+			System.out.printf("It's a 6 ! %s will get an extra chance to roll the dice again \n ",player.getPlayerName()); 
+		 }
+		 else {
+			 this.playerQueue.poll();
+			 this.playerQueue.add(player);
+		
+		 }
+	}
+	
+	/***
+	 * check Roll penalty in case of consecutive 1 
+	 * @param player
+	 */
+	public void checkRollPenalty(Player player){
+		 if(player.checkPenalty()) {
+			 System.out.printf("\n A second consecutive 1 means %s will miss their next turn \n ",player.getPlayerName());
+		 }
+	}
+	
+	/**
+	 * Input utility
+	 * @return array containing playerCount and target Score
+	 */
+	public static int[] takeInput() {
+		Scanner in = new Scanner(System.in);
+        System.out.println("\nPlease enter the number of players: ");
+        int playerCount=in.nextInt();
+		System.out.println("\nPlease enter the target score:");
+        int target=in.nextInt();
+        return new int[]{playerCount,target};
+	}
+	
 	
 
 	public static void main(String[] args) {
 		
 		try {
 			System.out.println("\n -----------READY TO PLAY----------- \n");
-			Scanner in = new Scanner(System.in);
-	        System.out.println("Please enter the number of players: ");
-	        int playerCount=in.nextInt();
-
+			
+			//taking input
+			int inp[]=takeInput();
+			int playerCount=inp[0];
+			int target=inp[1];
+	        while(playerCount<1 || target<1) {
+	        	System.out.println("Please enter  valid input values greater than 1 !");
+	        	inp=takeInput();
+				playerCount=inp[0];
+				target=inp[1];
+	        }
+			
+			//start game
 			PlayGame game = new PlayGame(playerCount);
-			System.out.println("Please enter the target score:");
-			game.setTargetScore(in.nextInt());
+			game.setTargetScore(target);
+
+			//initial positions
 			game.printScoreCard();
 			
 		 
@@ -204,11 +254,14 @@ public class PlayGame {
 					 int throwVal=game.rollDice();
 					 System.out.println("Dice value: "+ throwVal);
 					 currentPlayer.processThrow(throwVal);
+					 
+					 game.checkRollPenalty(currentPlayer);
+					 
 					 if( (currentPlayer.getScore() ) >= game.getTargetScore() ){
 						 
 						 System.out.println("-------------------------------------------");
-						 System.out.println(currentPlayer.getPlayerName() + " has reached the target value \n with a score of " + 
-						 currentPlayer.getScore() + "\n Rank: " + (game.winnersList.size()+1));
+						 System.out.printf( "%s has reached the target value \n with a score of %d \n Rank: %d \n" ,currentPlayer.getPlayerName()
+						 ,currentPlayer.getScore(),(game.winnersList.size()+1));
 						 System.out.println("-------------------------------------------");
 						 
 						 //add to winner list
@@ -219,17 +272,9 @@ public class PlayGame {
 						 game.printScoreCard();
 						 continue;
 					 }
-					 if(!currentPlayer.checkLuck() ){
-						 
-						 game.playerQueue.poll();
-						 game.playerQueue.add(currentPlayer);
-						 
-					 }
-					 else {
-						 //no modification to queue
-						 //players gets another go
-						 System.out.println("It's a 6 ! You will get an extra chance to roll the dice again ");
-					 }	 
+					 
+					 game.checkRollLuck(currentPlayer);
+					 
 					 
 				 }
 				 else {

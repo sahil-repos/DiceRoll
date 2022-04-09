@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="numberOfPlayersGreaterThanZero_AssertsTrue" project="DiceGame" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="testing.numberOfPlayersGreaterThanZero_AssertsTrue" time="0.009">
-    <testcase name="test" classname="testing.numberOfPlayersGreaterThanZero_AssertsTrue" time="0.009"/>
-  </testsuite>
-</testrun>
