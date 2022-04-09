@@ -13,7 +13,7 @@ Rules are simple
 7. The game concludes when all the players achieve the game target mark.
 8. Players are ranked in accordance to their order of target acheievement, rest competing players are ranked by their totalScores.
 
-##System set-up
+## System set-up
 
 Install Ecplipse IDE for Java from [official website](https://www.eclipse.org/downloads/) 
 
@@ -55,6 +55,8 @@ Open the project directory with Eclipse
  ![init](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/init.PNG)
 
  ![winner](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/winner.PNG)
+
+![sixDouble](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/sixDouble.PNG)
 
  ![FinalScore](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/FinalScore.PNG)
 
