@@ -1,0 +1,17 @@
+package testing;
+
+import static org.junit.Assert.*;
+import game.PlayGame;
+
+import org.junit.Test;
+
+public class numberOfPlayersShouldBeGreaterThanZero {
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+		//PlayGame game= new PlayGame(0);
+		//assertTrue("Number of players should be greater than 0 ", game. > curr);
+	}
+
+}

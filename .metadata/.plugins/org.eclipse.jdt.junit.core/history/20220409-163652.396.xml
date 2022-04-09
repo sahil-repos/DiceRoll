@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AllTests" project="DiceGame" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="testing.AllTests" time="0.003">
+    <testsuite name="testing.numberOfPlayersGreaterThanZero_AssertsTrue" time="0.001">
+      <testcase name="test" classname="testing.numberOfPlayersGreaterThanZero_AssertsTrue" time="0.001"/>
+    </testsuite>
+    <testsuite name="testing.DiceThrowShouldBeBetween1to6_AssertTrue" time="0.0">
+      <testcase name="test" classname="testing.DiceThrowShouldBeBetween1to6_AssertTrue" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.NumberOfPlayersLessThanOne_AssertFalse" time="0.0">
+      <testcase name="test" classname="testing.NumberOfPlayersLessThanOne_AssertFalse" time="0.0"/>
+    </testsuite>
+    <testsuite name="testing.PenaltyAfterTwoConsecutiveOnes_AssertTrue" time="0.001">
+      <testcase name="test" classname="testing.PenaltyAfterTwoConsecutiveOnes_AssertTrue" time="0.001"/>
+    </testsuite>
+  </testsuite>
+</testrun>

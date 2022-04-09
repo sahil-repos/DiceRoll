@@ -1,3 +1,14 @@
 1649429308830	Rename type 'player'
 1649431986404	Rename type 'playGame'
 1649433742985	Rename field 'lastDiceNumber'
+1649492562017	Delete element
+1649492900700	Delete element
+1649493495588	Delete element
+1649493587964	Delete element
+1649493664084	Delete element
+1649496855461	Delete element
+1649500042703	Delete element
+1649501414528	Rename type 'targetScoreLessThanZero_AssertsTrue'
+1649501439084	Rename type 'numberOfPlayersLessThanOne_AssertFail'
+1649501458456	Rename type 'NumberOfPlayersLessThanOne_AssertFail'
+1649506003803	Delete element
