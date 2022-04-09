@@ -54,7 +54,7 @@ Open the project directory with Eclipse
 
 ## Live Demo
 
-You can check the deployed repl [here] (https://replit.com/@sahil-repl/Dice#PlayGame.java)
+You can check the deployed repl [here](https://replit.com/@sahil-repl/Dice#PlayGame.java)
 
 
 
