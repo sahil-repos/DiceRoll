@@ -91,6 +91,22 @@ You can run each test separately as well , select the test and run the same comm
 
 ![singleUT](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/singleUT.PNG)
 
+## Folder Structure
+
+DiceRoll 
+    -DiceGame
+        -bin
+        -src
+            -game : Package containing game class.
+                -PlayGame.java : Class containing main method for entry point into our program
+                
+            -model :Package containing Player model class 
+                -Player.java  : Player class 
+                
+            -testing : Package containing Unit test suite and test cases. 
+                -AllTests.java : Unit Test Suite class
+            
+
 
 
 
