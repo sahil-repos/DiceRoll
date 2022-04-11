@@ -93,10 +93,10 @@ You can run each test separately as well , select the test and run the same comm
 
 ## Folder Structure
 
-DiceRoll 
-    -DiceGame
-        -bin
-        -src
+-DiceRoll :Repo
+    -DiceGame : Root Directory
+        -bin :
+        -src : directory contaaining java packages
             -game : Package containing game class.
                 -PlayGame.java : Class containing main method for entry point into our program
                 
