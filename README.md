@@ -109,6 +109,8 @@ You can run each test separately as well , select the test and run the same comm
                 
             -testing : Package containing Unit test suite and test cases. 
                 -AllTests.java : Unit Test Suite class
+                
+            - gameOfDice.jar :A runnable .jar file for application
             
 
 
