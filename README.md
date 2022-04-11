@@ -6,7 +6,7 @@ A simple java CLI based game where n players queue in to roll a dice one by one.
 Rules are simple
 1. A  numerical target value is decided for the game.
 2. Each player will roll a die
-3 The face value is added to there score.
+3. The face value is added to there score.
 4. A player  will complete the game  if he clears the target value of the game and thus will not roll die again.
 5. A player will get an extra roll if they draws a face value of 6
 6. A player will have to forfeit his next turn if they draw 1 twice in a row.
@@ -110,7 +110,7 @@ You can run each test separately as well , select the test and run the same comm
             -testing : Package containing Unit test suite and test cases. 
                 -AllTests.java : Unit Test Suite class
                 
-            - gameOfDice.jar :A runnable .jar file for application
+            - gameOfDice.jar :A java archive .jar file for the application
             
 
 
