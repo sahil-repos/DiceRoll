@@ -97,9 +97,9 @@ You can run each test separately as well , select the test and run the same comm
 
     -diceGame : Root Directory
     
-        -bin :
+        -bin : contains compiled files for the project
         
-        -src : directory contaaining java packages
+        -src : directory containing java packages that houses .java files
         
             -game : Package containing game class.
                 -PlayGame.java : Class containing main method for entry point into our program
