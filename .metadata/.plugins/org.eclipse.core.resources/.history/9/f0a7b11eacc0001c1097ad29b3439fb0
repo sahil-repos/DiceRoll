@@ -91,9 +91,9 @@ public class PlayGame {
 	 */
 	public int rollDice() {
 		int min=1,max=7;
-	    //Random random = new Random();
-	    //return random.nextInt(max - min) + min;
-		return 4;
+	    Random random = new Random();
+	    return random.nextInt(max - min) + min;
+		//return 6;
 	}
 	
 	/**

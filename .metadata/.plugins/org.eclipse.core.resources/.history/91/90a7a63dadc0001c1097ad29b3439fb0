@@ -125,7 +125,7 @@ private int score;
 	
 	//double multiplier
 	public boolean checkForScoreMultiplier(int currentThrowVal) {
-		if(currentThrowVal + this.lastDiceValue + this.penultimateValue == 12  && (this.penultimateValue!=0)) {
+		if(currentThrowVal + this.lastDiceValue + this.penultimateValue == 12) {
 			return true;
 		}
 		return false;

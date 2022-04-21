@@ -116,8 +116,8 @@ private int score;
 		updateScore(currentThrowVal);
 
 		if(checkForScoreMultiplier(currentThrowVal)) {
-			System.out.println("\n current throw gets doubled as sum of your last 3 throws is 12\n");
-			doubleScore(currentThrowVal);
+			System.out.println("\n Score doubled as sum of your last 3 throws is 12\n");
+			doubleScore();
 		}
 		
 		updateLastDiceValue(currentThrowVal);
@@ -125,15 +125,15 @@ private int score;
 	
 	//double multiplier
 	public boolean checkForScoreMultiplier(int currentThrowVal) {
-		if(currentThrowVal + this.lastDiceValue + this.penultimateValue == 12  && (this.penultimateValue!=0)) {
+		if(currentThrowVal + this.lastDiceValue + this.penultimateValue == 12) {
 			return true;
 		}
 		return false;
 	}
 	
 	//doubleup score
-	public void doubleScore(int currentThrowVal) {
-		this.score= this.score + currentThrowVal;
+	public void doubleScore() {
+		this.score= this.score *2;
 	}
 	
 }

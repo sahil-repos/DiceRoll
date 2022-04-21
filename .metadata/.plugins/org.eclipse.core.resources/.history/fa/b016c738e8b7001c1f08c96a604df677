@@ -1,9 +1,0 @@
-package game;
-
-public class InvalidArguementsForGameException extends Exception{
-	
-	public InvalidArguementsForGameException() {
-		super();
-	}
-
-}

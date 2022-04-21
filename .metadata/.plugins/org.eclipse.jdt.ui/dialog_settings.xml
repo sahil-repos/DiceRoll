@@ -28,4 +28,19 @@
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="4"/>
 	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="D:\SHL\jva\DiceRoll"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="PlayGame - DiceGame"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="DiceGame\src\gameOfDice.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="DiceGame\src\gameOfDice.jar"/>
+			<item value="DiceGame/src/ut.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="D:\SHL\jva\DiceRoll.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
 </section>
