@@ -6,12 +6,12 @@ A simple java CLI based game where n players queue in to roll a dice one by one.
 Rules are simple
 1. A  numerical target value is decided for the game.
 2. Each player will roll a die
-3 The face value is added to there score.
-4. A player  will complete the game  if he clears the target value of the game and thus will not roll die again.
-5. A player will get an extra roll if they draws a face value of 6
+3. The face value is added to their score.
+4. A player will complete the game  if they clears the target value of the game and thus will not roll die again.
+5. A player will get an extra roll if they draw a face value of 6
 6. A player will have to forfeit his next turn if they draw 1 twice in a row.
 7. The game concludes when all the players achieve the game target mark.
-8. Players are ranked in accordance to their order of target acheievement, rest competing players are ranked by their totalScores.
+8. Players are ranked in accordance to their order of target acheievement, rest competing players are ranked by their total Scores.
 
 ## System set-up
 
@@ -90,6 +90,28 @@ Press the following shortcut to run all tests
 You can run each test separately as well , select the test and run the same command.
 
 ![singleUT](https://github.com/sahil-repos/DiceRoll/blob/main/screenshots/singleUT.PNG)
+
+## Folder Structure
+
+-diceRoll :Repo
+
+    -diceGame : Root Directory
+    
+        -bin : contains compiled files for the project
+        
+        -src : directory containing java packages that houses .java files
+        
+            -game : Package containing game class.
+                -PlayGame.java : Class containing main method for entry point into our program
+                
+            -model :Package containing Player model class 
+                -Player.java  : Player class 
+                
+            -testing : Package containing Unit test suite and test cases. 
+                -AllTests.java : Unit Test Suite class
+                
+            - gameOfDice.jar :A java archive .jar file for the application
+            
 
 
 
